@@ -1,38 +1,255 @@
 .App {
+  height: 559px;
+  width: 654px;
+  border-radius: 20px;
+  background: #FCFCFC;
+  display: grid;
+  justify-content: center;
+  margin-top: 78px;
+}
+
+.title{
+  color:#FCFCFC;
+  align-items:end;
+  display: grid;
+  justify-content: center;
+  margin: 0%;
+}
+
+/* .memory{
+  background-color: #152938 ;
+  width: 1540px;
+  height: 1224px;
+  display: grid;
+  justify-content: center;
+} */
+
+.memory-four{
+  background-color: #FCFCFC;
+  width: 1540px;
+  height: 1224px;
+  display: grid;
+  justify-content: center;
+}
+
+.game-board{
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+
+}
+
+.select-heading {
+  color: #7191A5;
+  /* font-family: Atkinson Hyperlegible; */
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 33px;
+}
+
+.btn {
+  border-radius: 26px;
+  background: #BCCED9;
+  border: none;
+  color: #FCFCFC;
   text-align: center;
+  /* font-family: Atkinson Hyperlegible; */
+  font-size: 26px;
+  font-weight: 700;
+  width: 256px;
+  height: 50px;
+  cursor: pointer;
+  
+}
+.btn:hover {
+  background: #6395B8;
+}
+  
+.btn:active {
+  background: #304859;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.space {
+  display:flex;
+  justify-content: space-between;
+}
+.btn-numbers {
+  border-radius: 26px;
+  background: #BCCED9;
+  border: none;
+  color: #FCFCFC;
+  text-align: center;
+  /* font-family: Atkinson Hyperlegible; */
+  font-size: 26px;
+  font-weight: 700;
+  width: 119px;
+  height: 50px;
+  cursor: pointer;
+}
+.btn-numbers:hover {
+  background: #6395B8;
+}
+  
+.btn-numbers:active {
+  background: #304859;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-start {
+  border-radius: 26px;
+  background: #FDA214;
+  border: none;
+  color: #FCFCFC;
+  text-align: center;
+  /* font-family: Atkinson Hyperlegible; */
+  font-size: 26px;
+  font-weight: 700;
+  width: 541px;
+  height: 70px;
+  margin-top: 33px;
+  cursor: pointer;
+}
+.btn-start:hover {
+  background: #FFB84A;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.btn-restart {
+  border-radius: 26px;
+  background: #FDA214;
+  border: none;
+  color: #FCFCFC;
+  text-align: center;
+  /* font-family: Atkinson Hyperlegible; */
+  font-size: 20px;
+  font-weight: 700;
+  width: 127px;
+  height: 52px;
+  cursor: pointer;
+}
+
+.btn-restart:hover {
+  background: #FFB84A;
+}
+
+.btn-new-game {
+  border-radius: 26px;
+  background: #BCCED9 ;
+  border: none;
+  color: #152938;
+  text-align: center;
+  /* font-family: Atkinson Hyperlegible; */
+  font-size: 20px;
+  font-weight: 700;
+  width: 149px;
+  height: 52px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.btn-new-game:hover {
+  background: #6395B8;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 118px;
+  height: 118px;
+  background-color: #BCCED9;
+  color: #FCFCFC;
+  text-align: center;
+  /* font-family: Atkinson Hyperlegible; */
+  font-size: 56px;
+  font-weight: 700;
+  display: grid;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.circle:hover {
+  background: #6395B8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.circle-six {
+  border-radius: 50%;
+  width: 82px;
+  height: 82px;
+  background-color: #BCCED9;
+  color: #FCFCFC;
+  text-align: center;
+  /* font-family: Atkinson Hyperlegible; */
+  font-size: 44px;
+  font-weight: 700;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.circle-six:hover {
+  background: #6395B8;
+}
+
+.game-grid {
+  height: 532px;
+  width: 532px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row; 
+}
+
+.game-grid-six {
+  height: 572px;
+  width: 572px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row; 
+}
+
+.top-header{
+  display: flex;
+  align-items: baseline;
+  margin-top: 67px;
+  justify-content: space-between
+}
+
+.bottom-footer {
+  display: flex;
+}
+
+.player {
+  width: 230px;
+  height: 72px;
+  border-radius: 10px;
+  background: #DFE7EC;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-left: 21px;
+  padding-right: 24px;
+  justify-content: space-between
+}
+
+.player-heading {
+  color: #7191A5;
+  /* font-family: Atkinson Hyperlegible; */
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.score {
+  color: #304859;
+  text-align: right;
+  /* font-family: Atkinson Hyperlegible; */
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.four-heading {
+  color: #152938;
+  /* font-family: Atkinson Hyperlegible; */
+  font-size: 40px;
+  font-weight: 700;
 }

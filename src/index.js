@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Home from './components/home';
+import Four from './components/four';
+import Six from './components/six';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
+  < React.StrictMode>
+  <div className='memory'>
+    {/* <h1 className='title'>memory</h1> 
+    <Home /> */}
+    {/* <Four/> */}
+    <Six/>
+    </div>
   </React.StrictMode>
 );
 
